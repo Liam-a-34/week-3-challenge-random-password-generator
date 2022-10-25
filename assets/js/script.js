@@ -108,11 +108,11 @@ var generatePassword = function() { //prompt for user's password specifications
   }
 
   while(!passwordCriteria.minCriteria()){
-    window.alert("Passwords must use at least one of the criteria. You will be asked these questions again if you click cancel, to all");
+    window.alert("Passwords must use at least one of the criteria. You will be asked these questions again if you click cancel, to all of them.");
     passwordCriteria.lower_case = window.confirm("Would you like to use lower case letters?");
     passwordCriteria.upper_case = window.confirm("Woudl you like to use upper case letters?");
     passwordCriteria.numbers = window.confirm("Would you like to include numbers?");
-    passwordCriteria.sp_char = window.confirm("Would you like to use special characters? ex. ?,/,-,*,#,@,$");
+    passwordCriteria.sp_char = window.confirm("Would you like to use special characters? ie: ?,/,-,*,#,@,$");
   }
 
   var characterCount = passwordCriteria.getCharCounts(); //chooses how many of each character type is used in password based off of options and password length
