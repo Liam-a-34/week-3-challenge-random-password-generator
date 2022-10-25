@@ -12,12 +12,13 @@ body,
   padding: 0;
 }
 
-body {
+body { 
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
 .wrapper {
+/*  Styling for main Password Generator header  */
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -30,7 +31,8 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
-.card {
+.card { 
+/*  Main card styling  */
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -73,6 +75,7 @@ header {
 }
 
 .btn {
+/*  Styling for the Generate Password button  */
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
@@ -98,6 +101,7 @@ button[disabled] {
 }
 
 #password {
+/*  Styling for password  */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -118,7 +122,8 @@ button[disabled] {
   overflow: hidden;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 690px) { 
+/*  Styling for smaller screens  */
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
